@@ -3,9 +3,24 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 employees = [
-    {"id": 1, "name": "John", "department": "DevOps"},
-    {"id": 2, "name": "Alice", "department": "Developer"},
-    {"id": 3, "name": "David", "department": "QA"}
+    {
+        "id":1,
+        "name":"John",
+        "department":"DevOps",
+        "salary":85000
+    },
+    {
+        "id":2,
+        "name":"Alice",
+        "department":"Developer",
+        "salary":90000
+    },
+    {
+        "id":3,
+        "name":"David",
+        "department":"QA",
+        "salary":70000
+    }
 ]
 
 @app.route("/")
